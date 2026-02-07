@@ -45,7 +45,7 @@ export async function POST(req: Request) {
 
   if (task.status !== "in_progress") {
     return NextResponse.json(
-      { error: "Zadanie może być ukończone tylko gdy status jest in_progress" },
+      { error: "Zadanie może być ukończone tylko gdy status jest rozpoczęte" },
       { status: 400 },
     );
   }

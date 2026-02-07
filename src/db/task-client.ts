@@ -7,7 +7,9 @@ export const startTask = async (id: number) => {
   });
   if (!response.ok) {
     const err = await response.json().catch(() => ({}));
-    throw new Error((err as { error?: string }).error ?? "Failed to start task");
+    throw new Error(
+      (err as { error?: string }).error ?? "Nie udało się rozpocząć zadania",
+    );
   }
   const json = await response.json();
   return json.task;
@@ -22,7 +24,9 @@ export const completeTask = async (id: number) => {
   });
   if (!response.ok) {
     const err = await response.json().catch(() => ({}));
-    throw new Error((err as { error?: string }).error ?? "Failed to complete task");
+    throw new Error(
+      (err as { error?: string }).error ?? "Nie udało się ukończyć zadania",
+    );
   }
   const json = await response.json();
   return json.task;

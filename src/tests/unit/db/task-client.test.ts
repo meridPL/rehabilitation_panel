@@ -13,7 +13,12 @@ describe("task-client", () => {
 
   describe("startTask", () => {
     it("calls POST /api/tasks/start with id and returns task", async () => {
-      const task = { id: 1, title: "T", status: "in_progress", userId: 1 } as never;
+      const task = {
+        id: 1,
+        title: "T",
+        status: "in_progress",
+        userId: 1,
+      } as never;
       (global.fetch as jest.Mock).mockResolvedValueOnce({
         ok: true,
         json: () => Promise.resolve({ task }),
@@ -36,10 +41,15 @@ describe("task-client", () => {
     it("throws with message from API when not ok", async () => {
       (global.fetch as jest.Mock).mockResolvedValueOnce({
         ok: false,
-        json: () => Promise.resolve({ error: "Task can only be started when status is to_do" }),
+        json: () =>
+          Promise.resolve({
+            error: "Task can only be started when status is to_do",
+          }),
       });
 
-      await expect(startTask(1)).rejects.toThrow("Task can only be started when status is to_do");
+      await expect(startTask(1)).rejects.toThrow(
+        "Zadanie może być rozpoczęte tylko gdy status jest do zrobienia",
+      );
     });
 
     it("throws generic message when response has no error field", async () => {
@@ -48,7 +58,9 @@ describe("task-client", () => {
         json: () => Promise.resolve({}),
       });
 
-      await expect(startTask(1)).rejects.toThrow("Failed to start task");
+      await expect(startTask(1)).rejects.toThrow(
+        "Nie udało się rozpocząć zadania",
+      );
     });
   });
 
@@ -75,10 +87,10 @@ describe("task-client", () => {
     it("throws with message from API when not ok", async () => {
       (global.fetch as jest.Mock).mockResolvedValueOnce({
         ok: false,
-        json: () => Promise.resolve({ error: "Forbidden" }),
+        json: () => Promise.resolve({ error: "Brak dostępu" }),
       });
 
-      await expect(completeTask(1)).rejects.toThrow("Forbidden");
+      await expect(completeTask(1)).rejects.toThrow("Brak dostępu");
     });
   });
 });
