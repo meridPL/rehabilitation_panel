@@ -1,0 +1,155 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "anna.kowalska@example.com",
+      "password": "anna123",
+      "name": "Anna",
+      "surname": "Kowalska",
+      "age": 28
+    },
+    {
+      "id": 2,
+      "email": "bartosz.nowak@example.com",
+      "password": "bartosz123",
+      "name": "Bartosz",
+      "surname": "Nowak",
+      "age": 30
+    },
+    {
+      "id": 3,
+      "email": "piotr.nowak@example.com",
+      "password": "piotr123",
+      "name": "Piotr",
+      "surname": "Nowak",
+      "age": 35
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Ćwiczenia bierne – bark",
+      "description": "Zrobotyzowane ćwiczenia bierne na końcówce barku – ruch wspomagany EMG.",
+      "nameDevice": "Luna EMG – Końcówka barku",
+      "time": 60,
+      "weight": 3,
+      "status": "done",
+      "userId": 1,
+      "startedAt": "2026-02-07T11:22:22.926Z",
+      "completedAt": "2026-02-07T11:25:47.954Z"
+    },
+    {
+      "id": 2,
+      "title": "Ćwiczenia siłowe – łokieć",
+      "description": "Ćwiczenia siłowe na końcówce łokcia – wzmacnianie mięśni zginaczy i prostowników.",
+      "nameDevice": "Luna EMG – Końcówka łokcia",
+      "time": 20,
+      "weight": 1,
+      "status": "done",
+      "userId": 1,
+      "startedAt": "2026-02-07T11:26:15.210Z",
+      "completedAt": "2026-02-07T11:26:30.394Z"
+    },
+    {
+      "id": 3,
+      "title": "Pronacja i supinacja przedramienia",
+      "description": "Ćwiczenia rotacji przedramienia – pronacja i supinacja na końcówce przedramienia.",
+      "nameDevice": "Luna EMG – Końcówka przedramienia",
+      "time": 90,
+      "weight": 4,
+      "status": "in_progress",
+      "userId": 1,
+      "startedAt": "2026-02-07T11:39:52.095Z"
+    },
+    {
+      "id": 4,
+      "title": "Ćwiczenia z oporem dynamicznym – bark",
+      "description": "Trening barku z oporem dynamicznym dostosowanym do aktywności mięśniowej pacjenta.",
+      "nameDevice": "Luna EMG – Końcówka barku",
+      "time": 30,
+      "weight": 2,
+      "status": "to_do",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "title": "Ćwiczenia na końcówce tułowia",
+      "description": "Rehabilitacja tułowia na końcówce typu kierownica – poprawa zakresu ruchu.",
+      "nameDevice": "Luna EMG – Końcówka tułowia",
+      "time": 15,
+      "weight": 1,
+      "status": "to_do",
+      "userId": 2
+    },
+    {
+      "id": 6,
+      "title": "Ćwiczenia z grami rehabilitacyjnymi",
+      "description": "Trening przedramienia z wykorzystaniem gier rehabilitacyjnych – motywacja pacjenta.",
+      "nameDevice": "Luna EMG – Końcówka przedramienia",
+      "time": 40,
+      "weight": 2,
+      "status": "to_do",
+      "userId": 2
+    },
+    {
+      "id": 7,
+      "title": "Zginanie i prostowanie łokcia",
+      "description": "Ćwiczenia zginania i prostowania w stawie łokciowym – ruch wspomagany EMG.",
+      "nameDevice": "Luna EMG – Końcówka łokcia",
+      "time": 10,
+      "weight": 1,
+      "status": "to_do",
+      "userId": 2
+    },
+    {
+      "id": 8,
+      "title": "Rotacja barku",
+      "description": "Trening rotacji w stawie barkowym – przywracanie zakresu ruchu po urazach ortopedycznych.",
+      "nameDevice": "Luna EMG – Końcówka barku",
+      "time": 25,
+      "weight": 2,
+      "status": "to_do",
+      "userId": 2
+    },
+    {
+      "id": 9,
+      "title": "Ćwiczenia bierne – bark",
+      "description": "Zrobotyzowane ćwiczenia bierne na końcówce barku – ruch wspomagany EMG.",
+      "nameDevice": "Luna EMG – Końcówka barku",
+      "time": 45,
+      "weight": 2,
+      "status": "to_do",
+      "userId": 3
+    },
+    {
+      "id": 10,
+      "title": "Ćwiczenia siłowe – nadgarstek",
+      "description": "Trening nadgarstka – wzmacnianie mięśni zginaczy i prostowników.",
+      "nameDevice": "Luna EMG – Końcówka nadgarstka",
+      "time": 25,
+      "weight": 1,
+      "status": "to_do",
+      "userId": 3
+    },
+    {
+      "id": 11,
+      "title": "Rotacja przedramienia",
+      "description": "Ćwiczenia pronacji i supinacji – przywracanie zakresu ruchu.",
+      "nameDevice": "Luna EMG – Końcówka przedramienia",
+      "time": 35,
+      "weight": 3,
+      "status": "to_do",
+      "userId": 3
+    },
+    {
+      "id": 12,
+      "title": "Ćwiczenia z oporem – bark",
+      "description": "Trening barku z oporem dostosowanym do pacjenta.",
+      "nameDevice": "Luna EMG – Końcówka barku",
+      "time": 30,
+      "weight": 2,
+      "status": "to_do",
+      "userId": 3
+    }
+  ]
+}
